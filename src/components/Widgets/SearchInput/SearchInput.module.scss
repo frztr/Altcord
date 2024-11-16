@@ -1,0 +1,38 @@
+.search-control {
+    display: flex;
+    flex-direction: row;
+    row-gap: 0.75rem;
+    max-width: 12.5rem;
+    background: #FFFFFF50;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    align-items: center;
+    padding: 0 0.75rem;
+    color: #00000080;
+    transition: all 0.3s ease;
+
+    .search-control__input {
+        color: inherit;
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        font-weight: 700;
+        min-width: 0;
+        transition: all 0.3s ease;
+        width: fill-available;
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+
+    .search-control__input::placeholder {
+        color: #00000080;
+    }
+
+    .search-control__btn {
+        display: flex;
+        justify-content: center;
+        color: inherit;
+        transition: all 0.3s ease;
+    }
+}

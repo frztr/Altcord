@@ -1,0 +1,160 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    width: fill-available;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    height: 100%;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;
+
+    .chat__title-bar {
+        display: flex;
+        flex-direction: row;
+        width: fill-available;
+        width: -webkit-fill-available;
+        width: -moz-available;
+
+        padding: 1rem 1.25rem;
+        background: #FFFFFF80;
+        justify-content: space-between;
+        align-items: center;
+
+        .chat__desc {
+            display: flex;
+            flex-direction: row;
+            grid-gap: 0.75rem;
+            align-items: center;
+            flex-wrap: nowrap;
+
+            .chat__logo {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            .chat__name {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #000000;
+            }
+        }
+
+        .chat__controls {
+            display: flex;
+            flex-direction: row;
+            grid-gap: 1.25rem;
+            align-items: center;
+
+            .chat__btn-control {
+                aspect-ratio: 1;
+                height: 2.5rem;
+                color: #AEAEAE;
+                transition: all 0.4s ease;
+
+                .chat__btn-control__icon {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+
+            .chat__btn-control:hover {
+                color: #000000;
+            }
+
+
+
+            .chat__search-control:hover {
+                background: #FFFFFF;
+
+                .chat__search-control__input::placeholder {
+                    color: #00000080;
+                }
+
+                .chat__search-control__btn {
+                    color: #000000;
+                }
+            }
+
+        }
+    }
+
+    .chat__content {
+
+        display: flex;
+        flex-direction: row;
+        width: fill-available;
+        width: -webkit-fill-available;
+        width: -moz-available;
+        height: 100%;
+
+        .chat__content__main {
+            display: flex;
+            flex-direction: column;
+            height: fill-available;
+            height: -webkit-fill-available;
+            height: -moz-available;
+            height: 100%;
+            flex: 1;
+
+            .chat__field-wrap {
+                display: flex;
+                flex: 1;
+                height: fill-available;
+                height: -webkit-fill-available;
+                height: -moz-available;
+                height: 100%;
+                overflow: scroll;
+                flex-basis: 0;
+                padding-bottom: 1.25rem;
+                scroll-behavior: smooth;
+
+                .chat_field-container {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding-bottom: 1.25rem;
+                    height: max-content;
+                }
+            }
+
+            .chat__field-wrap::-webkit-scrollbar {
+                display: none;
+            }
+
+            .chat__send-bar {
+                position: relative;
+                height: 4.5rem;
+
+                .chat-sender {
+                    position: absolute;
+                    top: -1.25rem;
+                    width: fill-available;
+                    width: -webkit-fill-available;
+                    width: -moz-available;
+                    margin: 0 1.25rem;
+                    display: flex;
+                    flex-direction: row;
+                    grid-gap: 1rem;
+                    padding: 1rem;
+                    background: #f1f1f1;
+                    color: #00000080;
+                    border-radius: 1rem;
+
+                    .chat-sender__add-file {
+                        color: #00000080;
+                        aspect-ratio: 1;
+                    }
+
+                    .chat-sender__input {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        width: fill-available;
+                        width: -webkit-fill-available;
+                        width: -moz-available;
+                    }
+                }
+            }
+
+        }
+    }
+}

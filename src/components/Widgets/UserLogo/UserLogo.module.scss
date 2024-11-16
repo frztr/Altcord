@@ -1,0 +1,19 @@
+.user__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    min-width: 3rem;
+    min-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-size: cover;
+
+    .logo__icon {
+        width: 85%;
+        height: 85%;
+        color: black;
+    }
+}

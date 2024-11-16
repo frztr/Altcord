@@ -1,0 +1,21 @@
+.profile_info {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 1rem;
+    align-items: center;
+
+    .text_container {
+        display: flex;
+        flex-direction: column;
+        .username {
+            color: #000000;
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        .status {
+            color: #000000A3;
+            text-align: left;
+        }
+    }
+}

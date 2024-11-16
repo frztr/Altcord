@@ -1,0 +1,196 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: #FFFFFFCC;
+    width: fill-available;
+    width: -webkit-fill-available;
+    width: -moz-available;
+
+    .sidebar {
+        display: flex;
+        background-color: #FFFFFF80;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 1.25rem;
+        grid-gap: 0.9rem;
+
+        .sidebar__elem {
+            background-color: #FFFFFF;
+            color: black;
+            border-radius: 100%;
+        }
+
+        .textbutton,
+        .imagebutton {
+            transition: 0.3s ease all;
+            color: black;
+        }
+
+        .imagebutton {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            aspect-ratio: 1;
+            padding: 1rem;
+
+            .imagebutton_svg {
+                color: inherit;
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+
+        .textbutton {
+
+            font-weight: 700;
+            font-size: 2rem;
+            aspect-ratio: 1;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .textbutton:hover,
+        .imagebutton:hover {
+            background: #000000;
+            color: white;
+        }
+    }
+
+    .main__talkbar {
+        display: flex;
+        flex-direction: column;
+        min-width: 25rem;
+        background-color: #FFFFFFA3;
+
+        .search_container {
+            padding: 0.625rem;
+
+            .search {
+                border: none;
+                background-color: #FFFFFF;
+                color: black;
+                padding: 0.625rem 0.75rem;
+                width: fill-available;
+                width: -webkit-fill-available;
+                width: -moz-available;
+                border-radius: 0.5rem;
+                font-size: 1rem;
+                font-weight: 700;
+            }
+
+            .search:focus {
+                border: none;
+                outline: none;
+            }
+        }
+
+        .tabs_control {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 0.625rem;
+            padding: 0.625rem;
+
+            .tab_button {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                grid-gap: 0.625rem;
+                padding: 0.375rem 0.625rem;
+                color: #000000A3;
+                border-radius: 0.5rem;
+                transition: all 0.3s ease;
+                font-weight: 600;
+                font-size: 1.5rem;
+
+                .tab_button__icon {
+                    width: 3.125rem;
+                    height: 3.125rem;
+                    color: inherit;
+                }
+            }
+
+            .tab_button_selected,
+            .tab_button:hover {
+                background-color: #FFFFFFC0;
+                color: black;
+            }
+        }
+
+        .talks_container {
+            display: flex;
+            flex-direction: column;
+            height: fill-available;
+            height: -webkit-fill-available;
+            height: -moz-available;
+            height: 100%;
+            padding: 0 0.625rem;
+            grid-gap: 0.625rem;
+
+        }
+
+        .profile_bar {
+            display: flex;
+            flex-direction: row;
+            background-color: #FFFFFF80;
+            padding: 0.625rem;
+            justify-content: space-between;
+            height: min-content;
+
+
+
+
+            .profile_controls {
+                display: flex;
+                flex-direction: row;
+                grid-gap: 1rem;
+                flex-wrap: nowrap;
+                align-items: center;
+
+                .control {
+                    max-width: 2rem;
+                    max-height: 2rem;
+                    aspect-ratio: 1;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .main__tab {
+        background: #FFFFFF80;
+        display: flex;
+        flex-direction: column;
+        width: fill-available;
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+}
+
+.talk {
+    display: flex;
+    flex-direction: row;
+    padding: 0.625rem;
+    grid-gap: 1rem;
+    align-items: center;
+    border-radius: 0.625rem;
+    background: none;
+    color: #000000A3;
+    transition: all 0.3s ease;
+
+    .talk_text {
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: inherit;
+    }
+}
+
+.talk:hover,
+.talk_selected {
+    background: #FFFFFF80;
+    color: #000000;
+}

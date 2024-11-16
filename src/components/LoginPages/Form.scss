@@ -1,0 +1,96 @@
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFFCC;
+    width: fill-available;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    
+    
+
+    .form {
+        padding: 3rem;
+        border-radius: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #FFFFFF80;
+        grid-gap: 1rem;
+
+        .form__desc {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 1rem;
+            align-items: center;
+
+            .form__title {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: #000000CC;
+            }
+
+            .form__secondary_title {
+                color: #00000099;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+
+        .form__content {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 0.5rem;
+
+
+            .form__field {
+                display: flex;
+                flex-direction: column;
+                grid-gap: 0.5rem;
+
+                .field__title {
+                    font-weight: 700;
+                    font-size: 1.125rem;
+                    color: #000000BB;
+                }
+
+                .field__input {
+                    font-weight: 600;
+                    font-size: 0.875rem;
+                    width: 25rem;
+                    background: #FFFFFFCC;
+                    border-radius: 0.5rem;
+                    height: 2.5rem;
+                    padding: 0 1rem;
+                }
+            }
+        }
+
+        .form__confirm {
+            background: #00000099;
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+            width: fill-available;
+            width: -webkit-fill-available;
+            width: -moz-available;
+            height: 3rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            border-radius: 0.5rem;
+        }
+
+        .form__confirm:hover {
+            background: #000000;
+        }
+    }
+
+    .form__small-text {
+        color: #00000080;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .form__small-text:hover {
+        color: #000000;
+    }
+}

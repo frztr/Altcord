@@ -1,0 +1,16 @@
+.friends_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 0.625rem;
+    color: #000000A3;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    .friends_tab__icon {
+        width: 3.125rem;
+        height: 3.125rem;
+        color: inherit;
+    }
+}

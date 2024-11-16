@@ -1,0 +1,218 @@
+.friends-tab {
+    display: flex;
+    flex-direction: column;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;
+    height: fill-available;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: 100%;
+
+    .friends-tab__top-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.25rem;
+        background: #FFFFFF80;
+
+        .friends-tab__top-bar__main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            grid-gap: 1.25rem;
+
+            .friends-tab_title {
+                color: #00000099;
+            }
+
+            .friends-tab__separator {
+                background: #00000033;
+                height: 3rem;
+                width: 0.125rem;
+            }
+
+            .friends-tab__filter {
+                transition: all 0.3s ease;
+                padding: 0.25rem 0.625rem;
+                color: #00000099;
+                line-height: 150%;
+                font-size: 1.25rem;
+                font-weight: 500;
+                border-radius: 0.5rem;
+            }
+
+            .filter-active,
+            .friends-tab__filter:hover {
+                background: #FFFFFF80;
+                border-radius: 0.5rem;
+                color: #000000;
+            }
+
+            .friends-tab__filter.filter_negative {
+                color: #FFFFFF;
+                background: #00000099;
+            }
+
+            .filter-active.filter_negative,
+            .friends-tab__filter.filter_negative:hover {
+                background: #000000;
+            }
+        }
+
+        .friends-tab__add-chat {
+            width: 2.5rem;
+            height: 2.5rem;
+            color: #00000099;
+            transition: all 0.3s ease;
+        }
+
+        .friends-tab__add-chat:hover {
+            color: #000000;
+        }
+    }
+
+    .friends_tab__content_wrapper {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        flex: 1;
+
+
+        .friends_tab__content {
+            display: flex;
+            flex-direction: column;
+
+            .friends_tab__search {
+                width: fill-available;
+                width: -webkit-fill-available;
+                width: -moz-available;
+                max-width: none;
+                margin: 1.25rem;
+                height: 4rem;
+                padding: 0 1rem;
+
+                .friends_tab__search-input {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .friends_table__counter {
+                color: #00000099;
+                font-size: 1.5rem;
+                margin: 0 1.25rem;
+            }
+
+            .friends_table {
+                display: flex;
+                flex-direction: column;
+                margin: 0.75rem;
+
+                -webkit-animation: fadeIn 0.3s;
+                animation: fadeIn 0.3s;
+
+                .friends_table__item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 1rem 0.5rem;
+                    transition: all 0.3s ease;
+                    border-radius: 0.75rem;
+                    align-items: center;
+
+                    .friends_table__item__control_bar {
+                        display: flex;
+                        flex-direction: row;
+                        grid-gap: 2rem;
+                        align-items: center;
+
+                        .friends_table__item__control {
+                            width: 2rem;
+                            height: 2rem;
+                            color: #00000033;
+                        }
+                    }
+                }
+
+                .friends_table__item:hover {
+                    background: #FFFFFF80;
+
+                    .friends_table__item__control {
+                        transition: all 0.3s ease;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+
+        .friends_tab__add_friend_content {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 1rem;
+            padding: 1.25rem;
+            flex: 1;
+            -webkit-animation: fadeIn 0.3s;
+            animation: fadeIn 0.3s;
+
+            .add_friend_content_desc {
+
+                display: flex;
+                flex-direction: column;
+                grid-gap: 0.75rem;
+
+
+                .add_friend_content__title {
+                    color: #00000099;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                }
+
+                .add_friend_content__secondary {
+                    color: #00000099;
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                }
+            }
+
+            .add_friend_content__input_field {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background: #FFFFFF80;
+                border-radius: 0.5rem;
+                padding: 1rem;
+
+                .add_friend_content__input {
+                    color: #000000;
+                    font-size: 1.25rem;
+                    width: fill-available;
+                    width: -webkit-fill-available;
+                    width: -moz-available;
+                }
+
+                .add_friend_content__input::placeholder {
+                    color: #00000066;
+                }
+
+                .add_friend_content__btn {
+                    background: #00000099;
+                    color: #FFFFFF;
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                    border-radius: 0.5rem;
+                    text-wrap: nowrap;
+                    padding: 0.6rem 2.5rem;
+                    transition: all 0.3s ease;
+                }
+
+                .add_friend_content__btn:hover {
+                    background: #000000;
+                }
+            }
+        }
+    }
+
+    .friends_tab__content_wrapper::-webkit-scrollbar {
+        display: none;
+    }
+}
